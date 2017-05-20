@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">Aulas Fiap</string>
+    <string name="app_name">Time S2</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="desenvolvido_por_tairo_roberto">desenvolvido por: Tairo Roberto</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="idade">Idade</string>
+    <string name="nome">Nome</string>
+
+    <string name="selecione">Selecione o time</string>
+    <string name="palmeiras">Palmeiras</string>
+    <string name="corinthians">Corinthians</string>
+    <string name="sao_paulo">São Paulo</string>
+    <string name="santos">Santos</string>
+    <string name="ibis">Ibis</string>
 </resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="times">
+        <item>Selecione o time</item>
+        <item>@string/palmeiras</item>
+        <item>@string/corinthians</item>
+        <item>@string/sao_paulo</item>
+        <item>@string/santos</item>
+        <item>@string/ibis</item>
+    </string-array>
+</resources>
