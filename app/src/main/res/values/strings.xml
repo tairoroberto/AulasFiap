@@ -12,4 +12,5 @@
     <string name="sao_paulo">São Paulo</string>
     <string name="santos">Santos</string>
     <string name="ibis">Ibis</string>
+    <string name="parabens" formatted="false"> Olá %s Parabéns por torcer pelo %s</string>
 </resources>

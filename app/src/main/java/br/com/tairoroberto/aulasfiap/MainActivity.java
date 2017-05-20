@@ -9,7 +9,6 @@ import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.EditText;
 import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity {
@@ -44,11 +43,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void salvarUsuario(View view) {
         if (TextUtils.isEmpty(textInputEditTextIdade.getEditText().getText().toString())){
-            if (TextUtils.isEmpty(textInputEditTextNome.getEditText().getText().toString())){
-                Snackbar.make(textInputEditTextNome, "Insira o nome", Snackbar.LENGTH_SHORT).show();
-                return;
-            }
-            Snackbar.make(textInputEditTextNome, "Insira a idade", Snackbar.LENGTH_SHORT).show();
+            Snackbar.make(textInputEditTextIdade, "Insira a idade", Snackbar.LENGTH_SHORT).show();
+            textInputEditTextIdade.requestFocus();
+            return;
+        }
+        if (TextUtils.isEmpty(textInputEditTextNome.getEditText().getText().toString())){
+            Snackbar.make(textInputEditTextNome, "Insira o nome", Snackbar.LENGTH_SHORT).show();
+            textInputEditTextNome.requestFocus();
             return;
         }
         if (time.equalsIgnoreCase("Selecione o time")){
@@ -56,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        Intent intent = new Intent(MainActivity.this, SalvarUsuarioActivity.class);
+        Intent intent = new Intent(MainActivity.this, ConfirmacaoActivity.class);
         intent.putExtra("nome", textInputEditTextNome.getEditText().getText().toString());
         intent.putExtra("idade", textInputEditTextIdade.getEditText().getText().toString());
         intent.putExtra("time", time);
